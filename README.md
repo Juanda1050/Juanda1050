@@ -1,8 +1,11 @@
-<p> <img align="center" src="https://i.imgur.com/5XQPbzu.png" width="100" height="100"/> </p>
+<div class="content">
+  <div class="top-div" align="center">
+<img class="top-gif" src="https://i.imgur.com/5XQPbzu.png" width="100" height="100"/>
+</div>
 <h1 align="center">Hi 👋, I'm Juan Daniel</h1>
 <h3 align="center">Becoming a Software Engineer</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=juanda1050&label=Profile%20views&color=yellow&style=flat" alt="juanda1050" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=juanda1050&label=Profile%20views&color=blue&style=flat" alt="juanda1050" /> </p>
 
 - 🔭 I’m currently working on **me**
 
@@ -60,6 +63,6 @@
 ## Stats in Github
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api?username=juanda1050&show_icons=true&locale=en&theme=merko" alt="juanda1050" /></p>
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=juanda1050&theme=tokyonight" alt="juanda1050" /></p>
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=juanda1050&show_icons=true&locale=en&layout=compact&theme=onedark" alt="juanda1050" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=juanda1050&theme=merko" alt="juanda1050" /></p>
+<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=juanda1050&show_icons=true&locale=en&layout=compact&theme=sythwave" alt="juanda1050" /></p>
 
