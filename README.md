@@ -5,7 +5,7 @@
 <p></p>
 <h1 align="center">Hi 👋, I'm Juan Daniel</h1>
 <h3 align="center">Becoming a Software Engineer</h3>
-<img align="right" src="https://i.imgur.com/tiBe8pI.png" width="25%"/>
+<img align="right" src="https://i.imgur.com/tiBe8pI.png" width="50%"/>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=juanda1050&label=Profile%20views&color=blue&style=flat" alt="juanda1050" /> </p>
 
