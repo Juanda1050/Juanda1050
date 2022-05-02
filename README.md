@@ -1,17 +1,17 @@
 <h1 align="center">Hi 👋, I'm Juan Daniel</h1>
 <h3 align="center">Becoming a Software Engineer</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=juanda1050&label=Profile%20views&color=0e75b6&style=flat" alt="juanda1050" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=juanda1050&label=Profile%20views&color=yellow&style=flat" alt="juanda1050" /> </p>
 
 - 🔭 I’m currently working on **me**
 
-- 🌱 I’m currently learning **React Native**
+- 🧐 I’m currently learning **React Native**
 
-- 📫 How to reach me **danielalejandre1050@gmail.com**
+- 📫 How to reach me [danielalejandre1050@gmail.com](danielalejandre1050@gmail.com)
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1iLJBMTPTcQOTqABXAf1HAWpZhfgQWsgI/view?usp=sharing](https://drive.google.com/file/d/1iLJBMTPTcQOTqABXAf1HAWpZhfgQWsgI/view?usp=sharing)
+- 📄 Know about my experiences [My resume](https://drive.google.com/file/d/1Xg47iOMkBXV-AiPzRk1hdzZjyyUIyENV/view?usp=sharing)
 
-- ⚡ You can call me **JD or Juanda**
+- ✌ You can call me **JD or Juanda**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
@@ -58,9 +58,9 @@
 <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> 
 
 ## Stats in Github
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=juanda1050&show_icons=true&locale=en&layout=compact" alt="juanda1050" /></p>
+<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=juanda1050&show_icons=true&locale=en&layout=compact&theme=tokyonight" alt="juanda1050" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=juanda1050&show_icons=true&locale=en" alt="juanda1050" /></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=juanda1050&show_icons=true&locale=en&theme=tokyonight" alt="juanda1050" /></p>
 
-<p><img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=juanda1050&" alt="juanda1050" /></p>
+<p><img align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=juanda1050&theme=tokyonight" alt="juanda1050" /></p>
 
