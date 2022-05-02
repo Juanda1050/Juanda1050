@@ -1,7 +1,8 @@
-<div class="content">
+<div class="content" style="margin-bottom: 50px;">
   <div class="top-div" align="center">
-<img class="top-gif" src="https://media0.giphy.com/media/4no7ul3pa571e/giphy.gif?cid=ecf05e47ilmgmn68knh9tpey3m2d7qnua0mi784j8tcu9lrc&rid=giphy.gif&ct=g" width="100" height="100"/>
+<img class="top-gif" src="https://media0.giphy.com/media/4no7ul3pa571e/giphy.gif?cid=ecf05e47ilmgmn68knh9tpey3m2d7qnua0mi784j8tcu9lrc&rid=giphy.gif&ct=g" width="250" height="150"/>
 </div>
+<p></p>
 <h1 align="center">Hi 👋, I'm Juan Daniel</h1>
 <h3 align="center">Becoming a Software Engineer</h3>
 
@@ -61,8 +62,5 @@
 <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> 
 
 ## Stats in Github
-
 <p><img align="center" src="https://github-readme-stats.vercel.app/api?username=juanda1050&show_icons=true&locale=en&theme=merko" alt="juanda1050" /></p>
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=juanda1050&theme=merko" alt="juanda1050" /></p>
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=juanda1050&show_icons=true&locale=en&layout=compact&theme=merko" alt="juanda1050" /></p>
-
