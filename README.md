@@ -5,6 +5,7 @@
 <p></p>
 <h1 align="center">Hi 👋, I'm Juan Daniel</h1>
 <h3 align="center">Becoming a Software Engineer</h3>
+<img align="right" src="https://i.imgur.com/tiBe8pI.png" width="25%"/>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=juanda1050&label=Profile%20views&color=blue&style=flat" alt="juanda1050" /> </p>
 
@@ -20,8 +21,8 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://twitter.com/juanda_1050" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="juanda_1050" height="30" width="40" /></a>
-<a href="https://discord.gg/THEJDBOSSV.js#4500" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="THEJDBOSSV.js#4500" height="30" width="40" /></a>
+<a href="https://twitter.com/juanda_1050" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="juanda_1050" width="33" /></a>
+<a href="https://discord.gg/THEJDBOSSV.js#4500" target="blank"><img align="center" src="https://i.imgur.com/ouqm6UI.png" alt="THEJDBOSSV.js#4500" width="50" /></a>
 </p>
 
 ## Skills
@@ -62,5 +63,5 @@
 <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> 
 
 ## Stats in Github
-<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=juanda1050&show_icons=true&locale=en&theme=merko" alt="juanda1050" /></p>
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=juanda1050&theme=merko" alt="juanda1050" /></p>
+<img align="left" width="47%" src="https://github-readme-stats.vercel.app/api?username=juanda1050&show_icons=true&locale=en&theme=merko" alt="juanda1050" />
+<img align="left" width="47%" src="https://github-readme-streak-stats.herokuapp.com/?user=juanda1050&theme=merko" alt="juanda1050" />
