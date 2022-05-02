@@ -1,6 +1,6 @@
 <div class="content">
   <div class="top-div" align="center">
-<img class="top-gif" src="https://i.imgur.com/5XQPbzu.png" width="100" height="100"/>
+<img class="top-gif" src="https://media0.giphy.com/media/4no7ul3pa571e/giphy.gif?cid=ecf05e47ilmgmn68knh9tpey3m2d7qnua0mi784j8tcu9lrc&rid=giphy.gif&ct=g" width="100" height="100"/>
 </div>
 <h1 align="center">Hi 👋, I'm Juan Daniel</h1>
 <h3 align="center">Becoming a Software Engineer</h3>
@@ -64,5 +64,5 @@
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api?username=juanda1050&show_icons=true&locale=en&theme=merko" alt="juanda1050" /></p>
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=juanda1050&theme=merko" alt="juanda1050" /></p>
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=juanda1050&show_icons=true&locale=en&layout=compact&theme=sythwave" alt="juanda1050" /></p>
+<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=juanda1050&show_icons=true&locale=en&layout=compact&theme=merko" alt="juanda1050" /></p>
 
