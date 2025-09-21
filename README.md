@@ -1,83 +1,80 @@
-<div class="content" style="margin-bottom: 50px; font-family: Arial, sans-serif;">
-  <div class="top-div" align="center">
-    <img class="top-gif" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDVxd2Y5OHc3dXZ3Z2ZpNmdyMmJzZWE1ZTM3NzBpNWR5OGE1ZW5yZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QnVI2bPoZ0tag/giphy.gif" 
-         width="250" height="150"/>
-  </div>
+<div align="center">
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDVxd2Y5OHc3dXZ3Z2ZpNmdyMmJzZWE1ZTM3NzBpNWR5OGE1ZW5yZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QnVI2bPoZ0tag/giphy.gif" width="200px"/>
+  <h1>Hi 👋, I'm <span style="color:#228B22;">Juanda</span></h1>
+  <h3>🚀 Software Engineer | Problem Solver | Lifelong Learner</h3>
+</div>
 
-  <h1 align="center">Hi 👋, I'm Juanda</h1>
-  <h3 align="center">Software Engineer</h3>
-  <img align="right" src="https://i.imgur.com/tiBe8pI.png" width="45%"/>
+---
 
-  <p align="left">
-    <img src="https://komarev.com/ghpvc/?username=juanda1050&label=Profile%20views&color=blue&style=flat" alt="juanda1050" />
-  </p>
+### 🌱 About Me
+<img align="right" src="https://i.imgur.com/tiBe8pI.png" width="30%" />
 
-  <ul>
-    <li>🔭 I’m currently working on <b>myself</b></li>
-    <li>🧐 I’m currently learning <b>Node.js with Microservices</b></li>
-    <li>✌ You can call me <b>JD or Juanda</b></li>
-    <li>📫 How to reach me: <a href="mailto:danielalejandre1050@gmail.com">danielalejandre1050@gmail.com</a></li>
-    <li>📄 Know about my experiences: 
-      <a href="https://drive.google.com/file/d/1ZL2-FZStmovcsHmCMVqVI1uVzFYccxQZ/view?usp=sharing" target="_blank"><b>My Resume</b></a>
-    </li>
-  </ul>
+- 🔭 Working on **myself**
+- 🧐 Currently learning **Node.js with Microservices**
+- ✌ You can call me **JD or Juanda**
+- 📫 Reach me: [danielalejandre1050@gmail.com](mailto:danielalejandre1050@gmail.com)
+- 📄 Know about my experiences: [My Resume](https://drive.google.com/file/d/1ZL2-FZStmovcsHmCMVqVI1uVzFYccxQZ/view?usp=sharing)
 
-  <h3 align="left">Connect with me:</h3>
-  <p align="left">
-    <a href="https://twitter.com/juanda_1050" target="blank">
-      <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="twitter" width="33" />
-    </a>
-    <a href="https://discord.gg/THEJDBOSSV.js#4500" target="blank">
-      <img align="center" src="https://i.imgur.com/ouqm6UI.png" alt="discord" width="45" />
-    </a>
-  </p>
+---
 
-  <h2>🚀 Skills</h2>
+### 🌐 Connect with Me  
+<a href="https://twitter.com/juanda_1050">
+  <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" width="40px"/>
+</a>
+<a href="https://discord.gg/THEJDBOSSV.js#4500">
+  <img src="https://i.imgur.com/ouqm6UI.png" width="45px"/>
+</a>
 
-  <h4>Programming Languages</h4>
-  <a href="https://www.java.com" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40"/>
-  </a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-    <img src="https://i.imgur.com/B57kpQJ.png" alt="javascript" width="40"/>
-  </a>
-  <a href="https://www.python.org" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40"/>
-  </a>
+---
 
-  <h4>Frontend Development</h4>
-  <a href="https://www.w3.org/html/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width="40"/></a>
-  <a href="https://www.w3schools.com/css/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="40"/></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40"/></a>
-  <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40"/></a>
-  <a href="https://reactjs.org/" target="_blank"><img src="https://reactnative.dev/img/header_logo.svg" width="40"/></a>
-  <a href="https://tailwindcss.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="40"/></a>
+### 💻 Tech Stack  
 
-  <h4>Backend Development</h4>
-  <a href="https://nodejs.org" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="40"/></a>
-  <a href="https://expressjs.com" target="_blank"><img src="https://www.guayerd.com/wp-content/uploads/2021/04/expressjs-logo.svg" width="40"/></a>
-  <a href="https://dotnet.microsoft.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg" alt=".NET" width="40"/></a>
+#### 👨‍💻 Programming Languages  
+<p>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="40" />
+  <img src="https://i.imgur.com/B57kpQJ.png" width="40" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" />
+</p>
 
-  <h4>Mobile App Development</h4>
-  <a href="https://reactnative.dev/" target="_blank"><img src="https://reactnative.dev/img/header_logo.svg" width="40"/></a>
+#### 🎨 Frontend  
+<p>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40"/>
+  <img src="https://reactnative.dev/img/header_logo.svg" width="40"/>
+  <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="40"/>
+</p>
 
-  <h4>Database</h4>
-  <a href="https://www.mysql.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="40"/></a>
+#### ⚙️ Backend  
+<p>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="40"/>
+  <img src="https://www.guayerd.com/wp-content/uploads/2021/04/expressjs-logo.svg" width="40"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg" width="40"/>
+</p>
 
-  <h4>BaaS</h4>
-  <a href="https://firebase.google.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" width="40"/></a>
+#### 📱 Mobile  
+<p>
+  <img src="https://reactnative.dev/img/header_logo.svg" width="40"/>
+</p>
 
-  <h4>Design Software</h4>
-  <a href="https://www.figma.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" width="40"/></a>
-  <a href="https://www.adobe.com/products/xd.html" target="_blank"><img src="https://i.imgur.com/9X8VLa1.png" width="40"/></a>
+#### 🗄 Database  
+<p>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="40"/>
+</p>
 
-  <h4>Other Tools</h4>
-  <a href="https://git-scm.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="40"/></a>
-  <a href="https://www.linux.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40"/></a>
-  <a href="https://postman.com" target="_blank"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="40"/></a>
-  <a href="https://aws.amazon.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png" width="40"/></a>
+#### 🔧 Tools & Others  
+<p>
+  <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" width="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40"/>
+  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="40"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" width="60"/>
+</p>
 
-  <h2>📊 GitHub Stats</h2>
-  <img align="left" width="47%" src="https://github-readme-stats.vercel.app/api?username=juanda1050&show_icons=true&locale=en&theme=merko" />
-  <img align="left" width="47%" src="https://github-readme-streak-stats.herokuapp.com/?user=juanda1050&theme=merko" />
+---
+
+### 📊 GitHub Stats  
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=juanda1050&show_icons=true&theme=merko" height="160px"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=juanda1050&theme=merko" height="160px"/>
 </div>
