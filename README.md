@@ -14,11 +14,11 @@
 
   <ul>
     <li>🔭 I’m currently working on <b>myself</b></li>
-    <li>🧐 I’m currently learning <b>React Native</b></li>
+    <li>🧐 I’m currently learning <b>Node.js with Microservices</b></li>
     <li>✌ You can call me <b>JD or Juanda</b></li>
     <li>📫 How to reach me: <a href="mailto:danielalejandre1050@gmail.com">danielalejandre1050@gmail.com</a></li>
     <li>📄 Know about my experiences: 
-      <a href="https://drive.google.com/file/d/1Xg47iOMkBXV-AiPzRk1hdzZjyyUIyENV/view?usp=sharing" target="_blank"><b>My Resume</b></a>
+      <a href="https://drive.google.com/file/d/1ZL2-FZStmovcsHmCMVqVI1uVzFYccxQZ/view?usp=sharing" target="_blank"><b>My Resume</b></a>
     </li>
   </ul>
 
@@ -48,6 +48,8 @@
   <h4>Frontend Development</h4>
   <a href="https://www.w3.org/html/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width="40"/></a>
   <a href="https://www.w3schools.com/css/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="40"/></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40"/></a>
+  <a href="https://www.typescriptlang.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40"/></a>
   <a href="https://reactjs.org/" target="_blank"><img src="https://reactnative.dev/img/header_logo.svg" width="40"/></a>
   <a href="https://tailwindcss.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="40"/></a>
 
@@ -58,7 +60,6 @@
 
   <h4>Mobile App Development</h4>
   <a href="https://reactnative.dev/" target="_blank"><img src="https://reactnative.dev/img/header_logo.svg" width="40"/></a>
-  <a href="https://ionicframework.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Ionic_Logo.svg" width="40"/></a>
 
   <h4>Database</h4>
   <a href="https://www.mysql.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="40"/></a>
@@ -69,13 +70,22 @@
   <h4>Design Software</h4>
   <a href="https://www.figma.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" width="40"/></a>
   <a href="https://www.adobe.com/products/xd.html" target="_blank"><img src="https://i.imgur.com/9X8VLa1.png" width="40"/></a>
-  <a href="https://www.photoshop.com/en" target="_blank"><img src="https://i.imgur.com/XHK1mRk.png" width="40"/></a>
-  <a href="https://www.blender.org/" target="_blank"><img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" width="40"/></a>
 
   <h4>Other Tools</h4>
   <a href="https://git-scm.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="40"/></a>
   <a href="https://www.linux.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40"/></a>
   <a href="https://postman.com" target="_blank"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="40"/></a>
+
+  <h4>AWS Services</h4>
+  <a href="https://aws.amazon.com/s3/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" alt="aws" width="40"/>
+  </a>
+  <a href="https://aws.amazon.com/ec2/" target="_blank" rel="noreferrer">
+    <img src="https://cdn.worldvectorlogo.com/logos/aws-ec2.svg" alt="ec2" width="40"/>
+  </a>
+  <a href="https://aws.amazon.com/s3/" target="_blank" rel="noreferrer">
+    <img src="https://cdn.worldvectorlogo.com/logos/amazon-s3.svg" alt="s3" width="40"/>
+  </a>
 
   <h2>📊 GitHub Stats</h2>
   <img align="left" width="47%" src="https://github-readme-stats.vercel.app/api?username=juanda1050&show_icons=true&locale=en&theme=merko" />
