@@ -1,6 +1,6 @@
 <div class="content" style="margin-bottom: 50px; font-family: Arial, sans-serif;">
   <div class="top-div" align="center">
-    <img class="top-gif" src="https://media0.giphy.com/media/4no7ul3pa571e/giphy.gif?cid=ecf05e47ilmgmn68knh9tpey3m2d7qnua0mi784j8tcu9lrc&rid=giphy.gif&ct=g" 
+    <img class="top-gif" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDVxd2Y5OHc3dXZ3Z2ZpNmdyMmJzZWE1ZTM3NzBpNWR5OGE1ZW5yZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QnVI2bPoZ0tag/giphy.gif" 
          width="250" height="150"/>
   </div>
 
@@ -75,17 +75,7 @@
   <a href="https://git-scm.com/" target="_blank"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="40"/></a>
   <a href="https://www.linux.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40"/></a>
   <a href="https://postman.com" target="_blank"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="40"/></a>
-
-  <h4>AWS Services</h4>
-  <a href="https://aws.amazon.com/s3/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original.svg" alt="aws" width="40"/>
-  </a>
-  <a href="https://aws.amazon.com/ec2/" target="_blank" rel="noreferrer">
-    <img src="https://cdn.worldvectorlogo.com/logos/aws-ec2.svg" alt="ec2" width="40"/>
-  </a>
-  <a href="https://aws.amazon.com/s3/" target="_blank" rel="noreferrer">
-    <img src="https://cdn.worldvectorlogo.com/logos/amazon-s3.svg" alt="s3" width="40"/>
-  </a>
+  <a href="https://aws.amazon.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png" width="40"/></a>
 
   <h2>📊 GitHub Stats</h2>
   <img align="left" width="47%" src="https://github-readme-stats.vercel.app/api?username=juanda1050&show_icons=true&locale=en&theme=merko" />
