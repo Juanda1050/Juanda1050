@@ -1,83 +1,93 @@
+<!-- Hero Section -->
 <div align="center">
-  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDVxd2Y5OHc3dXZ3Z2ZpNmdyMmJzZWE1ZTM3NzBpNWR5OGE1ZW5yZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QnVI2bPoZ0tag/giphy.gif" width="200px"/>
-  <h1>Hi 👋, I'm <span style="color:#228B22;">Juanda</span></h1>
-  <h3>🚀 Software Engineer | Problem Solver | Lifelong Learner</h3>
+  <img src="https://media4.giphy.com/media/QnVI2bPoZ0tag/giphy.gif" width="180px"/>
+  <h1 align="center">Hey 👋, I'm <span style="color:#4CAF50;">Juanda 🏎️</span></h1>
+  <h3 align="center">🚀 Software Engineer | Problem Solver | Lifelong Learner</h3>
+  
+<!-- Badges -->
+  <p align="center">
+     <a href="mailto:danielalejandre1050@gmail.com" target="_blank">
+      <img src="https://img.shields.io/badge/Email-FF5722?style=flat&logo=gmail&logoColor=white"/>
+    </a>
+    <a href="https://twitter.com/juanda_1050" target="_blank">
+      <img src="https://img.shields.io/badge/Twitter-1C9CEA?style=flat&logo=twitter&logoColor=white"/>
+    </a>
+    <a href="https://drive.google.com/file/d/1ZL2-FZStmovcsHmCMVqVI1uVzFYccxQZ/view?usp=sharing" target="_blank">
+      <img src="https://img.shields.io/badge/Resume-0078D4?style=flat&logo=googledrive&logoColor=white"/>
+    </a>
+  </p>
 </div>
 
 ---
 
-### 🌱 About Me
-<img align="right" src="https://i.imgur.com/tiBe8pI.png" width="30%" />
+## 🌱 About Me  
 
-- 🔭 Working on **myself**
-- 🧐 Currently learning **Node.js with Microservices**
-- ✌ You can call me **JD or Juanda**
-- 📫 Reach me: [danielalejandre1050@gmail.com](mailto:danielalejandre1050@gmail.com)
-- 📄 Know about my experiences: [My Resume](https://drive.google.com/file/d/1ZL2-FZStmovcsHmCMVqVI1uVzFYccxQZ/view?usp=sharing)
+<div align="center">
+  <img src="https://i.imgur.com/tiBe8pI.png" width="200px" align="right"/>
+</div>
 
----
+👻 Hi there! I'm **Juanda** — passionate about technology, continuous learning, and problem solving.  
 
-### 🌐 Connect with Me  
-<a href="https://twitter.com/juanda_1050" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/2491px-Logo_of_Twitter.svg.png" width="40px"/>
-</a>
-<a href="https://discord.gg/THEJDBOSSV.js#4500" target="_blank">
-  <img src="https://i.imgur.com/ouqm6UI.png" width="45px"/>
-</a>
+- 🔭 Currently focused on **becoming 1% better every day**  
+- 🧑‍💻 Learning **Node.js + Microservices**
+- 💬 Always open to collaborate on exciting projects  
+- 📩 Reach me at: [danielalejandre1050@gmail.com](mailto:danielalejandre1050@gmail.com)  
+- 📄 Learn more about me: [Resume](https://drive.google.com/file/d/1ZL2-FZStmovcsHmCMVqVI1uVzFYccxQZ/view?usp=sharing)  
 
 ---
 
-### 💻 Tech Stack  
+## 💻 Tech Stack  
 
-#### 👨‍💻 Programming Languages  
-<p>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="40" />
+#### 👨‍💻 Languages  
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=cs,js,ts,python,java" />
 </p>
 
 #### 🎨 Frontend  
-<p>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="40"/>
-  <img src="https://reactnative.dev/img/header_logo.svg" width="40"/>
-  <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" width="40"/>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,react,tailwind" />
 </p>
 
 #### ⚙️ Backend  
-<p>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="40"/>
-  <img src="https://www.guayerd.com/wp-content/uploads/2021/04/expressjs-logo.svg" width="40"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg" width="40"/>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nodejs,express,dotnet" />
 </p>
 
 #### 📱 Mobile  
-<p>
-  <img src="https://reactnative.dev/img/header_logo.svg" width="40"/>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react" />
 </p>
 
-#### 🗄 Database  
-<p>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/supabase/supabase-original-wordmark.svg" width="40"/>
+#### 🗄 Databases  
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=mysql,postgresql,azure,supabase" />
 </p>
 
-#### 🔧 Tools & Others  
-<p>
-  <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" width="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40"/>
-  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="40"/>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" width="60"/>
+#### 🔧 Tools & Cloud  
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=git,linux,postman,aws" />
 </p>
 
 ---
 
-### 📊 GitHub Stats  
+## 📊 GitHub Stats  
+
 <div align="center">
-  <img align="center" width="44.5%" src="https://github-readme-stats.vercel.app/api?username=Juanda1050&theme=gotham&show_icons=true&hide_border=false&count_private=true" />
-  <img align="center" width="47%" src="https://github-readme-streak-stats.herokuapp.com/?user=Juanda1050&theme=gotham&hide_border=false" />
+  <img align="center" style="width:43.5%;" src="https://github-readme-stats.vercel.app/api?username=Juanda1050&theme=radical&show_icons=true&hide_border=false&count_private=true" />
+  <img align="center" style="width:46%;" src="https://github-readme-streak-stats.herokuapp.com/?user=Juanda1050&theme=radical&hide_border=false" />
 </div>
+
+<br/> 
+
+<!-- Activity Graph -->
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Juanda1050&theme=radical" width="90%"/>
+</div>
+
+---
+
+## 🌐 Connect with Me  
+<p align="center">
+  <a href="https://twitter.com/juanda_1050"><img src="https://skillicons.dev/icons?i=twitter" width="40px"/></a>
+  <a href="https://discord.gg/THEJDBOSSV.js#4500"><img src="https://skillicons.dev/icons?i=discord" width="40px"/></a>
+</p>
