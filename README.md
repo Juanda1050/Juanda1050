@@ -83,11 +83,3 @@
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Juanda1050&theme=radical" width="90%"/>
 </div>
-
----
-
-## 🌐 Connect with Me  
-<p align="center">
-  <a href="https://twitter.com/juanda_1050"><img src="https://skillicons.dev/icons?i=twitter" width="40px"/></a>
-  <a href="https://discord.gg/THEJDBOSSV.js#4500"><img src="https://skillicons.dev/icons?i=discord" width="40px"/></a>
-</p>
