@@ -60,12 +60,12 @@
 
 #### 🗄 Databases  
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=mysql,postgresql,azure,supabase" />
+  <img src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb,supabase" />
 </p>
 
 #### 🔧 Tools & Cloud  
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=git,linux,postman,aws" />
+  <img src="https://skillicons.dev/icons?i=git,linux,postman,aws,azure,docker" />
 </p>
 
 ---
