@@ -18,10 +18,10 @@
 ---
 
 ### 🌐 Connect with Me  
-<a href="https://twitter.com/juanda_1050">
-  <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" width="40px"/>
+<a href="https://twitter.com/juanda_1050" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/2491px-Logo_of_Twitter.svg.png" width="40px"/>
 </a>
-<a href="https://discord.gg/THEJDBOSSV.js#4500">
+<a href="https://discord.gg/THEJDBOSSV.js#4500" target="_blank">
   <img src="https://i.imgur.com/ouqm6UI.png" width="45px"/>
 </a>
 
