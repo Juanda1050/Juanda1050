@@ -78,6 +78,7 @@
 
 ### 📊 GitHub Stats  
 <div align="center">
-  <img align="left" width="47%" src="https://github-readme-stats.vercel.app/api?username=juanda1050&show_icons=true&locale=en&theme=merko" />
-  <img align="left" width="47%" src="https://github-readme-streak-stats.herokuapp.com/?user=juanda1050&theme=merko" />
+  <img align="left" width="33%" src="![Juanda1050's Stats](https://github-readme-stats.vercel.app/api?username=Juanda1050&theme=gotham&show_icons=true&hide_border=false&count_private=true)" />
+  <img align="left" width="33%" src="![Juanda1050's Streak](https://github-readme-streak-stats.herokuapp.com/?user=Juanda1050&theme=gotham&hide_border=false)" />
+  <img align="left" width="33%" src="![Juanda1050's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Juanda1050&theme=gotham&show_icons=true&hide_border=false&layout=compact)" />
 </div>
