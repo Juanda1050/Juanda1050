@@ -75,6 +75,6 @@
 
 ### 📊 GitHub Stats  
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=juanda1050&show_icons=true&theme=merko" height="160px"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=juanda1050&theme=merko" height="160px"/>
+  <img align="left" width="47%" src="https://github-readme-stats.vercel.app/api?username=juanda1050&show_icons=true&locale=en&theme=merko" />
+  <img align="left" width="47%" src="https://github-readme-streak-stats.herokuapp.com/?user=juanda1050&theme=merko" />
 </div>
