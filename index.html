@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ServoMotion Solution – Precision Engineering &amp; Industrial Automation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --red:   #e63329;
+      --dark:  #1a1a1a;
+      --gray:  #3a3a3a;
+      --light: #f5f5f5;
+      --white: #ffffff;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Roboto', sans-serif; color: var(--gray); background: var(--white); overflow-x: hidden; }
+    img  { display: block; max-width: 100%; }
+    a    { text-decoration: none; color: inherit; }
+    ul   { list-style: none; }
+
+    /* ============================================================
+       NAVBAR
+    ============================================================ */
+    #navbar {
+      position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%; height: 72px;
+      background: transparent;
+      transition: background 0.4s ease, box-shadow 0.4s ease;
+    }
+    #navbar.scrolled {
+      background: var(--dark);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 10px;
+    }
+    .nav-logo-icon {
+      width: 38px; height: 38px; flex-shrink: 0;
+    }
+    .nav-logo-text {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900; font-size: 1.15rem;
+      color: var(--white); line-height: 1.1;
+      letter-spacing: 0.5px;
+    }
+    .nav-logo-text span { color: var(--red); }
+    .nav-links { display: flex; gap: 30px; align-items: center; }
+    .nav-links a {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem; font-weight: 600; letter-spacing: 0.8px;
+      text-transform: uppercase; color: rgba(255,255,255,0.88);
+      position: relative; padding-bottom: 4px;
+      transition: color 0.25s;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: 0; left: 0;
+      width: 0; height: 2px; background: var(--red);
+      transition: width 0.25s;
+    }
+    .nav-links a:hover { color: var(--white); }
+    .nav-links a:hover::after { width: 100%; }
+    /* Hamburger */
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px; cursor: pointer;
+      padding: 6px;
+    }
+    .hamburger span {
+      display: block; width: 26px; height: 2px;
+      background: var(--white); border-radius: 2px;
+      transition: all 0.3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    /* Mobile menu */
+    .mobile-menu {
+      display: none; position: fixed; top: 72px; left: 0; width: 100%;
+      background: var(--dark); padding: 20px 5% 30px;
+      flex-direction: column; gap: 18px; z-index: 999;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9rem; font-weight: 600; color: rgba(255,255,255,0.85);
+      text-transform: uppercase; letter-spacing: 1px;
+      border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 14px;
+    }
+    .mobile-menu a:last-child { border-bottom: none; }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    #hero {
+      position: relative; height: 100vh; min-height: 600px;
+      background: url('https://images.unsplash.com/photo-1565043666747-69f6646db940?w=1600') center/cover no-repeat;
+      display: flex; align-items: center;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(120deg, rgba(26,26,26,0.82) 45%, rgba(26,26,26,0.45) 100%);
+    }
+    .hero-content {
+      position: relative; z-index: 2; padding: 0 8%; max-width: 780px;
+    }
+    .hero-tag {
+      display: inline-block;
+      background: var(--red); color: var(--white);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 2.5px;
+      text-transform: uppercase; padding: 5px 14px; margin-bottom: 22px;
+      border-radius: 2px;
+    }
+    .hero-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      font-weight: 900; color: var(--white); line-height: 1.1;
+      text-transform: uppercase; margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+    .hero-title em { font-style: normal; color: var(--red); }
+    .hero-sub {
+      font-size: 1.05rem; color: rgba(255,255,255,0.78);
+      margin-bottom: 38px; line-height: 1.6; max-width: 520px;
+    }
+    .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--red); color: var(--white);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700; font-size: 0.82rem; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 14px 32px; border: none;
+      border-radius: 3px; cursor: pointer;
+      transition: background 0.25s, transform 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: #c42820; transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent; color: var(--white);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700; font-size: 0.82rem; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 13px 32px;
+      border: 2px solid rgba(255,255,255,0.6); border-radius: 3px;
+      cursor: pointer; transition: all 0.25s;
+      display: inline-block;
+    }
+    .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
+    /* Scroll indicator */
+    .hero-scroll {
+      position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      z-index: 2; cursor: pointer;
+    }
+    .hero-scroll span {
+      font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase;
+      color: rgba(255,255,255,0.55); font-family: 'Montserrat', sans-serif;
+    }
+    .scroll-arrow {
+      width: 22px; height: 22px; border-right: 2px solid rgba(255,255,255,0.5);
+      border-bottom: 2px solid rgba(255,255,255,0.5);
+      transform: rotate(45deg);
+      animation: scrollBounce 1.6s infinite;
+    }
+    @keyframes scrollBounce {
+      0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.5; }
+      50%       { transform: rotate(45deg) translateY(6px); opacity: 1; }
+    }
+
+    /* ============================================================
+       FEATURES STRIP
+    ============================================================ */
+    #features {
+      background: var(--white);
+      padding: 70px 5%;
+    }
+    .features-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 36px; max-width: 1140px; margin: 0 auto;
+    }
+    .feature-card {
+      display: flex; flex-direction: column; align-items: flex-start;
+      padding: 36px 30px; border-radius: 4px;
+      border: 1px solid #e8e8e8;
+      transition: box-shadow 0.3s, transform 0.3s;
+      opacity: 0; transform: translateY(30px);
+    }
+    .feature-card.visible { opacity: 1; transform: translateY(0); }
+    .feature-card:hover {
+      box-shadow: 0 12px 36px rgba(230,51,41,0.12);
+      transform: translateY(-6px);
+    }
+    .feature-icon {
+      font-size: 2.4rem; margin-bottom: 18px;
+    }
+    .feature-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem; font-weight: 700; color: var(--dark);
+      text-transform: uppercase; letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .feature-card h3::after {
+      content: ''; display: block; width: 38px; height: 3px;
+      background: var(--red); margin-top: 8px;
+    }
+    .feature-card p {
+      font-size: 0.92rem; line-height: 1.72; color: #666;
+    }
+
+    /* ============================================================
+       SECTION LABELS (reusable)
+    ============================================================ */
+    .section-label {
+      text-align: center; margin-bottom: 52px;
+    }
+    .section-label .pre-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--red); margin-bottom: 10px;
+    }
+    .section-label h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 900;
+      color: var(--dark); line-height: 1.2;
+    }
+    .section-label p {
+      margin-top: 14px; font-size: 0.96rem; color: #666;
+      max-width: 540px; margin-left: auto; margin-right: auto; line-height: 1.7;
+    }
+
+    /* ============================================================
+       SERVICES GRID
+    ============================================================ */
+    #services {
+      padding: 80px 5%; background: var(--light);
+    }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 24px; max-width: 1200px; margin: 0 auto;
+    }
+    .service-card {
+      position: relative; height: 340px; border-radius: 4px; overflow: hidden;
+      cursor: pointer;
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .service-card.visible { opacity: 1; transform: translateY(0); }
+    .service-card-img {
+      position: absolute; inset: 0;
+      background-size: cover; background-position: center;
+      transition: transform 0.5s ease;
+    }
+    .service-card:hover .service-card-img { transform: scale(1.08); }
+    .service-card-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(26,26,26,0.88) 35%, rgba(26,26,26,0.2) 100%);
+      transition: background 0.35s;
+    }
+    .service-card:hover .service-card-overlay {
+      background: linear-gradient(to top, rgba(230,51,41,0.8) 30%, rgba(26,26,26,0.35) 100%);
+    }
+    .service-card-body {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 28px 24px; z-index: 2;
+    }
+    .service-card-body h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.05rem; font-weight: 700; color: var(--white);
+      text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px;
+    }
+    .btn-card {
+      display: inline-block;
+      background: var(--red); color: var(--white);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 9px 20px; border-radius: 2px;
+      transition: background 0.25s, transform 0.2s;
+      transform: translateY(10px); opacity: 0;
+    }
+    .service-card:hover .btn-card {
+      opacity: 1; transform: translateY(0);
+    }
+    .btn-card:hover { background: var(--white); color: var(--red); }
+
+    /* ============================================================
+       ROBOT ARM ANIMATION SECTION
+    ============================================================ */
+    #robot-arm {
+      padding: 100px 5%;
+      background: var(--white);
+      overflow: hidden;
+    }
+    .robot-arm-inner {
+      max-width: 1140px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 60px; align-items: center;
+    }
+    .robot-arm-text {
+      opacity: 0; transform: translateX(-60px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .robot-arm-text.visible { opacity: 1; transform: translateX(0); }
+    .robot-arm-text .pre-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 3px;
+      text-transform: uppercase; color: var(--red); margin-bottom: 12px;
+    }
+    .robot-arm-text h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 900;
+      color: var(--dark); line-height: 1.15; margin-bottom: 8px;
+    }
+    .robot-arm-text h2 .sub-title {
+      display: block; font-size: 0.6em; font-weight: 600;
+      color: #888; letter-spacing: 0.5px; text-transform: none;
+    }
+    .robot-arm-text p {
+      font-size: 0.96rem; color: #666; line-height: 1.78; margin: 20px 0 32px;
+    }
+    .robot-features { display: flex; flex-direction: column; gap: 16px; }
+    .robot-feature-item {
+      display: flex; align-items: flex-start; gap: 14px;
+      opacity: 0; transform: translateX(-30px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .robot-feature-item.visible { opacity: 1; transform: translateX(0); }
+    .rfi-icon {
+      width: 40px; height: 40px; flex-shrink: 0;
+      background: var(--red); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+    }
+    .rfi-text h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.88rem; font-weight: 700; color: var(--dark);
+      margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .rfi-text p { font-size: 0.84rem; color: #777; line-height: 1.6; }
+
+    /* SVG ARM */
+    .robot-arm-svg-wrap {
+      position: relative; display: flex; justify-content: center; align-items: center;
+      min-height: 420px;
+    }
+    .arm-svg {
+      width: 100%; max-width: 460px; height: auto;
+      filter: drop-shadow(0 20px 60px rgba(230,120,0,0.22));
+    }
+    /* Arm segment animation origins */
+    #seg-base   { transform-origin: 160px 340px; transform: rotate(0deg); transition: transform 1.0s cubic-bezier(.4,0,.2,1) 0.1s; }
+    #seg-lower  { transform-origin: 160px 260px; transform: rotate(0deg); transition: transform 0.9s cubic-bezier(.4,0,.2,1) 0.35s; }
+    #seg-upper  { transform-origin: 190px 190px; transform: rotate(0deg); transition: transform 0.9s cubic-bezier(.4,0,.2,1) 0.6s; }
+    #seg-wrist  { transform-origin: 230px 130px; transform: rotate(0deg); transition: transform 0.8s cubic-bezier(.4,0,.2,1) 0.85s; }
+    #seg-grip   { transform-origin: 258px 80px;  transform: rotate(0deg); transition: transform 0.7s cubic-bezier(.4,0,.2,1) 1.05s; }
+    /* Animated state */
+    #robot-arm.arm-animated #seg-base  { transform: rotate(-8deg); }
+    #robot-arm.arm-animated #seg-lower { transform: rotate(22deg); }
+    #robot-arm.arm-animated #seg-upper { transform: rotate(-18deg); }
+    #robot-arm.arm-animated #seg-wrist { transform: rotate(14deg); }
+    #robot-arm.arm-animated #seg-grip  { transform: rotate(-10deg); }
+
+    /* ============================================================
+       SERVICES DETAIL
+    ============================================================ */
+    #services-detail {
+      padding: 80px 5%; background: var(--light);
+    }
+    .services-detail-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 28px; max-width: 1140px; margin: 0 auto;
+    }
+    .sd-card {
+      background: var(--white); border-radius: 4px; overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s;
+    }
+    .sd-card.visible { opacity: 1; transform: translateY(0); }
+    .sd-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.13); }
+    .sd-card-img {
+      height: 210px; overflow: hidden;
+    }
+    .sd-card-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    .sd-card:hover .sd-card-img img { transform: scale(1.07); }
+    .sd-card-body { padding: 26px 24px; }
+    .sd-card-body h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem; font-weight: 700; color: var(--dark);
+      text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 10px;
+    }
+    .sd-card-body h3::after {
+      content: ''; display: block; width: 32px; height: 3px;
+      background: var(--red); margin-top: 7px;
+    }
+    .sd-card-body p { font-size: 0.88rem; color: #666; line-height: 1.72; margin-top: 14px; }
+
+    /* ============================================================
+       STATS BAR
+    ============================================================ */
+    #stats {
+      background: var(--red);
+      padding: 48px 5%;
+    }
+    .stats-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 20px; text-align: center;
+    }
+    .stat-number {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(2rem, 4vw, 3rem); font-weight: 900;
+      color: var(--white); line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.8rem; color: rgba(255,255,255,0.8);
+      text-transform: uppercase; letter-spacing: 1.5px; margin-top: 6px;
+      font-family: 'Montserrat', sans-serif; font-weight: 600;
+    }
+
+    /* ============================================================
+       PARTNERS MARQUEE
+    ============================================================ */
+    #partners {
+      padding: 60px 0; background: var(--dark); overflow: hidden;
+    }
+    .partners-label {
+      text-align: center; margin-bottom: 36px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 3px;
+      text-transform: uppercase; color: rgba(255,255,255,0.4);
+    }
+    .marquee-track {
+      display: flex; width: max-content;
+      animation: marqueeScroll 22s linear infinite;
+    }
+    .marquee-track:hover { animation-play-state: paused; }
+    @keyframes marqueeScroll {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+    .partner-item {
+      display: flex; align-items: center; justify-content: center;
+      padding: 0 56px; flex-shrink: 0;
+    }
+    .partner-name {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem; font-weight: 900; letter-spacing: 3px;
+      color: rgba(255,255,255,0.2);
+      text-transform: uppercase;
+      transition: color 0.3s;
+      white-space: nowrap;
+      user-select: none;
+    }
+    .partner-item:hover .partner-name { color: rgba(255,255,255,0.75); }
+    .partner-sep {
+      font-size: 0.5rem; color: rgba(255,255,255,0.12);
+      padding: 0 10px;
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    #footer {
+      background: var(--dark); padding: 72px 5% 0;
+    }
+    .footer-grid {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 1.8fr 1fr 1fr;
+      gap: 48px; padding-bottom: 52px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    /* Left col */
+    .footer-brand .footer-logo-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem; font-weight: 900; color: var(--white);
+      letter-spacing: 0.5px; margin-bottom: 16px;
+    }
+    .footer-brand .footer-logo-text span { color: var(--red); }
+    .footer-brand p {
+      font-size: 0.86rem; color: rgba(255,255,255,0.45);
+      line-height: 1.75; margin-bottom: 26px;
+    }
+    .footer-socials { display: flex; gap: 12px; }
+    .social-btn {
+      width: 38px; height: 38px; border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.18);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.55); font-size: 0.85rem;
+      transition: all 0.25s; cursor: pointer;
+    }
+    .social-btn:hover { background: var(--red); border-color: var(--red); color: var(--white); }
+    /* Center col */
+    .footer-contact h4, .footer-cta h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--white); margin-bottom: 22px;
+    }
+    .contact-item {
+      display: flex; align-items: flex-start; gap: 12px; margin-bottom: 18px;
+    }
+    .contact-item .ci-icon { font-size: 1rem; margin-top: 1px; flex-shrink: 0; color: var(--red); }
+    .contact-item .ci-text {
+      font-size: 0.86rem; color: rgba(255,255,255,0.52); line-height: 1.6;
+    }
+    .contact-item .ci-text strong { display: block; color: rgba(255,255,255,0.8); font-size: 0.78rem; font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 2px; }
+    /* Right col – CTA */
+    .footer-cta p {
+      font-size: 0.86rem; color: rgba(255,255,255,0.45); line-height: 1.7; margin-bottom: 24px;
+    }
+    .btn-yt {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--red); color: var(--white);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 12px 22px; border-radius: 3px;
+      transition: background 0.25s;
+    }
+    .btn-yt:hover { background: #c42820; }
+    .btn-yt-icon { font-size: 1.1rem; }
+    /* Bottom bar */
+    .footer-bottom {
+      max-width: 1200px; margin: 0 auto;
+      padding: 20px 0;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .footer-bottom span {
+      font-size: 0.78rem; color: rgba(255,255,255,0.28);
+    }
+    .footer-bottom-links { display: flex; gap: 22px; }
+    .footer-bottom-links a {
+      font-size: 0.78rem; color: rgba(255,255,255,0.28);
+      transition: color 0.2s;
+    }
+    .footer-bottom-links a:hover { color: var(--red); }
+
+    /* ============================================================
+       FADE-IN UTILITY (IntersectionObserver)
+    ============================================================ */
+    .fade-in {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 1100px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid   { grid-template-columns: 1fr 1fr; }
+      .footer-cta    { grid-column: 1 / -1; }
+    }
+    @media (max-width: 900px) {
+      .features-grid      { grid-template-columns: 1fr 1fr; }
+      .robot-arm-inner    { grid-template-columns: 1fr; }
+      .robot-arm-svg-wrap { min-height: 320px; order: -1; }
+      .services-detail-grid { grid-template-columns: 1fr 1fr; }
+      .stats-inner        { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 720px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .features-grid        { grid-template-columns: 1fr; }
+      .services-grid        { grid-template-columns: 1fr; }
+      .services-detail-grid { grid-template-columns: 1fr; }
+      .stats-inner          { grid-template-columns: 1fr 1fr; }
+      .footer-grid          { grid-template-columns: 1fr; }
+      .footer-bottom        { flex-direction: column; align-items: flex-start; }
+      .hero-content         { padding: 0 6%; }
+    }
+    @media (max-width: 420px) {
+      .stats-inner { grid-template-columns: 1fr; }
+      .hero-btns   { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav id="navbar">
+    <a class="nav-logo" href="#">
+      <svg class="nav-logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="19" cy="19" r="18" fill="#e63329" stroke="none"/>
+        <circle cx="19" cy="19" r="7" fill="none" stroke="#fff" stroke-width="2"/>
+        <circle cx="19" cy="19" r="2.5" fill="#fff"/>
+        <line x1="19" y1="1" x2="19" y2="8"  stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="19" y1="30" x2="19" y2="37" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="1"  y1="19" x2="8"  y2="19" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+        <line x1="30" y1="19" x2="37" y2="19" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+      <div class="nav-logo-text">Servo<span>Motion</span><br/>Solution</div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#robot-arm">About Us</a></li>
+      <li><a href="#services">Our Resources</a></li>
+      <li><a href="#services-detail">Solutions</a></li>
+      <li><a href="#partners">Client Area</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="#hero"           onclick="closeMobileMenu()">Home</a>
+    <a href="#robot-arm"      onclick="closeMobileMenu()">About Us</a>
+    <a href="#services"       onclick="closeMobileMenu()">Our Resources</a>
+    <a href="#services-detail" onclick="closeMobileMenu()">Solutions</a>
+    <a href="#partners"       onclick="closeMobileMenu()">Client Area</a>
+    <a href="#footer"         onclick="closeMobileMenu()">Contact</a>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section id="hero" aria-label="Hero section">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Industrial Automation Leader</div>
+      <h1 class="hero-title">Servo <em>Motion</em><br/>Solution</h1>
+      <p class="hero-sub">Precision Engineering & Industrial Automation — delivering cutting-edge servo and motion control systems worldwide since 2003.</p>
+      <div class="hero-btns">
+        <a class="btn-primary" href="#services">DISCOVER MORE</a>
+        <a class="btn-outline" href="#robot-arm">OUR TECHNOLOGY</a>
+      </div>
+    </div>
+    <div class="hero-scroll" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
+      <span>Scroll</span>
+      <div class="scroll-arrow" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURES STRIP
+  ============================================================ -->
+  <section id="features" aria-label="Features">
+    <div class="features-grid">
+      <article class="feature-card" data-anim="fade-up" style="transition-delay:0s">
+        <div class="feature-icon" aria-hidden="true">🏆</div>
+        <h3>Quality</h3>
+        <p>High-precision servo and motion control solutions with top quality standards, even for the most complex projects and demanding environments.</p>
+      </article>
+      <article class="feature-card" data-anim="fade-up" style="transition-delay:0.12s">
+        <div class="feature-icon" aria-hidden="true">🤝</div>
+        <h3>Reliability</h3>
+        <p>Our primary goal: we are organized and structured to meet every commitment made with our clients, on time and within specification.</p>
+      </article>
+      <article class="feature-card" data-anim="fade-up" style="transition-delay:0.24s">
+        <div class="feature-icon" aria-hidden="true">⏱️</div>
+        <h3>Punctuality</h3>
+        <p>Our entire organization is oriented and optimized to handle all types of orders on time, from the simplest to the most complex missions.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES GRID
+  ============================================================ -->
+  <section id="services" aria-label="Services">
+    <div class="section-label fade-in">
+      <p class="pre-title">What We Do</p>
+      <h2>Our Core Services</h2>
+      <p>End-to-end industrial automation solutions — from individual servo motors to complete robotic systems.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card" style="transition-delay:0s">
+        <div class="service-card-img" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=400')" role="img" aria-label="Servo Motors"></div>
+        <div class="service-card-overlay" aria-hidden="true"></div>
+        <div class="service-card-body">
+          <h3>Servo Motors</h3>
+          <a class="btn-card" href="#services-detail">LEARN MORE</a>
+        </div>
+      </article>
+      <article class="service-card" style="transition-delay:0.1s">
+        <div class="service-card-img" style="background-image:url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400')" role="img" aria-label="Motion Control"></div>
+        <div class="service-card-overlay" aria-hidden="true"></div>
+        <div class="service-card-body">
+          <h3>Motion Control</h3>
+          <a class="btn-card" href="#services-detail">LEARN MORE</a>
+        </div>
+      </article>
+      <article class="service-card" style="transition-delay:0.2s">
+        <div class="service-card-img" style="background-image:url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400')" role="img" aria-label="Industrial Robots"></div>
+        <div class="service-card-overlay" aria-hidden="true"></div>
+        <div class="service-card-body">
+          <h3>Industrial Robots</h3>
+          <a class="btn-card" href="#services-detail">LEARN MORE</a>
+        </div>
+      </article>
+      <article class="service-card" style="transition-delay:0.3s">
+        <div class="service-card-img" style="background-image:url('https://images.unsplash.com/photo-1563770660941-20978e870e26?w=400')" role="img" aria-label="Automation Systems"></div>
+        <div class="service-card-overlay" aria-hidden="true"></div>
+        <div class="service-card-body">
+          <h3>Automation Systems</h3>
+          <a class="btn-card" href="#services-detail">LEARN MORE</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ROBOT ARM ANIMATION
+  ============================================================ -->
+  <section id="robot-arm" aria-label="Technology and innovative solutions">
+    <div class="robot-arm-inner">
+      <!-- TEXT -->
+      <div class="robot-arm-text">
+        <p class="pre-title">Our Technology</p>
+        <h2>Technology<span class="sub-title">and innovative solutions</span></h2>
+        <p>Precision servo and motion control projects using cutting-edge machinery and next-generation technologies. We combine decades of experience with the latest advancements in robotics and industrial automation.</p>
+        <div class="robot-features">
+          <div class="robot-feature-item" style="transition-delay:0.2s">
+            <div class="rfi-icon" aria-hidden="true">⚙️</div>
+            <div class="rfi-text">
+              <h4>Advanced Servo Systems</h4>
+              <p>Multi-axis precision control with real-time feedback loops and sub-micron positioning accuracy.</p>
+            </div>
+          </div>
+          <div class="robot-feature-item" style="transition-delay:0.38s">
+            <div class="rfi-icon" aria-hidden="true">🤖</div>
+            <div class="rfi-text">
+              <h4>Robotic Integration</h4>
+              <p>Seamless integration of KUKA, FANUC and ABB robotic platforms into existing production lines.</p>
+            </div>
+          </div>
+          <div class="robot-feature-item" style="transition-delay:0.56s">
+            <div class="rfi-icon" aria-hidden="true">📡</div>
+            <div class="rfi-text">
+              <h4>Smart Connectivity</h4>
+              <p>Industry 4.0 ready systems with OPC-UA, PROFINET and real-time cloud monitoring.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SVG ROBOT ARM -->
+      <div class="robot-arm-svg-wrap" aria-hidden="true">
+        <svg class="arm-svg" viewBox="0 0 340 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Base / floor mount -->
+          <rect x="110" y="350" width="100" height="18" rx="4" fill="#2a2a2a"/>
+          <rect x="130" y="338" width="60" height="16" rx="3" fill="#3a3a3a"/>
+          <!-- Base joint housing -->
+          <circle cx="160" cy="340" r="22" fill="#3d3d3d" stroke="#555" stroke-width="1.5"/>
+          <circle cx="160" cy="340" r="12" fill="#e67800" stroke="#ff9a1f" stroke-width="1"/>
+          <circle cx="160" cy="340" r="4"  fill="#2a2a2a"/>
+
+          <!-- Segment group: BASE (rotates at base joint) -->
+          <g id="seg-base">
+            <!-- Lower arm link -->
+            <rect x="148" y="265" width="24" height="80" rx="6" fill="#e67800"/>
+            <rect x="152" y="268" width="16" height="74" rx="4" fill="#ff9a1f" opacity="0.35"/>
+            <!-- Detail lines -->
+            <line x1="152" y1="280" x2="168" y2="280" stroke="#cc6600" stroke-width="1"/>
+            <line x1="152" y1="295" x2="168" y2="295" stroke="#cc6600" stroke-width="1"/>
+            <line x1="152" y1="310" x2="168" y2="310" stroke="#cc6600" stroke-width="1"/>
+            <!-- Lower joint -->
+            <circle cx="160" cy="263" r="16" fill="#3d3d3d" stroke="#555" stroke-width="1.5"/>
+            <circle cx="160" cy="263" r="9"  fill="#e67800" stroke="#ff9a1f" stroke-width="1"/>
+            <circle cx="160" cy="263" r="3.5" fill="#2a2a2a"/>
+
+            <!-- Segment group: LOWER ARM -->
+            <g id="seg-lower">
+              <!-- Upper arm link — angled -->
+              <rect x="148" y="185" width="24" height="82" rx="6" fill="#cc5f00"/>
+              <rect x="152" y="188" width="16" height="76" rx="4" fill="#e67800" opacity="0.4"/>
+              <line x1="152" y1="200" x2="168" y2="200" stroke="#aa4d00" stroke-width="1"/>
+              <line x1="152" y1="215" x2="168" y2="215" stroke="#aa4d00" stroke-width="1"/>
+              <line x1="152" y1="230" x2="168" y2="230" stroke="#aa4d00" stroke-width="1"/>
+              <!-- Upper joint -->
+              <circle cx="160" cy="183" r="16" fill="#3d3d3d" stroke="#555" stroke-width="1.5"/>
+              <circle cx="160" cy="183" r="9"  fill="#cc5f00" stroke="#e67800" stroke-width="1"/>
+              <circle cx="160" cy="183" r="3.5" fill="#2a2a2a"/>
+
+              <!-- Segment group: UPPER ARM -->
+              <g id="seg-upper">
+                <!-- Forearm — angled right -->
+                <rect x="152" y="112" width="56" height="20" rx="5" fill="#e67800"/>
+                <rect x="155" y="115" width="50" height="14" rx="3" fill="#ff9a1f" opacity="0.35"/>
+                <!-- Wrist joint -->
+                <circle cx="215" cy="122" r="14" fill="#3d3d3d" stroke="#555" stroke-width="1.5"/>
+                <circle cx="215" cy="122" r="8"  fill="#e67800" stroke="#ff9a1f" stroke-width="1"/>
+                <circle cx="215" cy="122" r="3"  fill="#2a2a2a"/>
+
+                <!-- Segment group: WRIST -->
+                <g id="seg-wrist">
+                  <!-- Wrist link -->
+                  <rect x="207" y="72"  width="16" height="52" rx="5" fill="#cc5f00"/>
+                  <rect x="210" y="75"  width="10" height="46" rx="3" fill="#e67800" opacity="0.4"/>
+                  <!-- Tool mount joint -->
+                  <circle cx="215" cy="70"  r="12" fill="#3d3d3d" stroke="#555" stroke-width="1.5"/>
+                  <circle cx="215" cy="70"  r="7"  fill="#e67800" stroke="#ff9a1f" stroke-width="1"/>
+                  <circle cx="215" cy="70"  r="2.5" fill="#2a2a2a"/>
+
+                  <!-- Segment group: GRIPPER/TOOL -->
+                  <g id="seg-grip">
+                    <!-- Tool body -->
+                    <rect x="208" y="30" width="14" height="42" rx="4" fill="#2a2a2a"/>
+                    <!-- Gripper fingers -->
+                    <rect x="203" y="14" width="6"  height="22" rx="2" fill="#3d3d3d"/>
+                    <rect x="221" y="14" width="6"  height="22" rx="2" fill="#3d3d3d"/>
+                    <!-- Finger tips -->
+                    <rect x="203" y="12" width="6"  height="5"  rx="1" fill="#e67800"/>
+                    <rect x="221" y="12" width="6"  height="5"  rx="1" fill="#e67800"/>
+                    <!-- Tool detail -->
+                    <line x1="210" y1="36" x2="220" y2="36" stroke="#555" stroke-width="1"/>
+                    <line x1="210" y1="42" x2="220" y2="42" stroke="#555" stroke-width="1"/>
+                    <circle cx="215" cy="50" r="3" fill="#e67800" opacity="0.6"/>
+                    <!-- LED indicator -->
+                    <circle cx="215" cy="22" r="2.5" fill="#00e5ff" opacity="0.9"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+
+          <!-- Floor plate -->
+          <rect x="90" y="365" width="140" height="8" rx="3" fill="#222"/>
+          <rect x="80" y="371" width="160" height="5" rx="2" fill="#1a1a1a"/>
+
+          <!-- Background grid hints -->
+          <line x1="30"  y1="370" x2="310" y2="370" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4 8" opacity="0.3"/>
+          <line x1="30"  y1="340" x2="100" y2="340" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4 8" opacity="0.2"/>
+          <line x1="220" y1="340" x2="310" y2="340" stroke="#ddd" stroke-width="0.5" stroke-dasharray="4 8" opacity="0.2"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES DETAIL
+  ============================================================ -->
+  <section id="services-detail" aria-label="Services detail">
+    <div class="section-label fade-in">
+      <p class="pre-title">Our Solutions</p>
+      <h2>Precision Built for Industry</h2>
+      <p>From sheet metal to fully automated welding cells — we deliver complete end-to-end industrial solutions.</p>
+    </div>
+    <div class="services-detail-grid">
+      <article class="sd-card">
+        <div class="sd-card-img">
+          <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600" alt="Precision Engineering — machining workshop" loading="lazy"/>
+        </div>
+        <div class="sd-card-body">
+          <h3>Precision Engineering</h3>
+          <p>We carry out precision engineering projects on sheet metal, steel and aluminum using state-of-the-art tools and specialized staff, ensuring micron-level accuracy on every part.</p>
+        </div>
+      </article>
+      <article class="sd-card">
+        <div class="sd-card-img">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600" alt="Motion Control Systems — electronics circuit board" loading="lazy"/>
+        </div>
+        <div class="sd-card-body">
+          <h3>Motion Control Systems</h3>
+          <p>Motion control is our strong point. For over 30 years we have been carrying out precision work on any type of servo system — from single-axis drives to full multi-axis synchronized platforms.</p>
+        </div>
+      </article>
+      <article class="sd-card">
+        <div class="sd-card-img">
+          <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=600" alt="Robotic Welding — industrial factory floor" loading="lazy"/>
+        </div>
+        <div class="sd-card-body">
+          <h3>Robotic Welding</h3>
+          <p>Various welding processes are performed by advanced programmable robots, achieving further increases in precision, repeatability and productivity across high-volume production runs.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STATS BAR
+  ============================================================ -->
+  <section id="stats" aria-label="Company statistics">
+    <div class="stats-inner">
+      <div class="stat-item fade-in" style="transition-delay:0s">
+        <div class="stat-number" data-target="20">0</div>
+        <div class="stat-label">Years of Experience</div>
+      </div>
+      <div class="stat-item fade-in" style="transition-delay:0.1s">
+        <div class="stat-number" data-target="500">0</div>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div class="stat-item fade-in" style="transition-delay:0.2s">
+        <div class="stat-number" data-target="120">0</div>
+        <div class="stat-label">Clients Worldwide</div>
+      </div>
+      <div class="stat-item fade-in" style="transition-delay:0.3s">
+        <div class="stat-number" data-target="98">0</div>
+        <div class="stat-label">Satisfaction Rate %</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PARTNERS MARQUEE
+  ============================================================ -->
+  <section id="partners" aria-label="Partner brands">
+    <p class="partners-label">Trusted by Industry Leaders</p>
+    <div class="marquee-track" role="list" aria-label="Partner logos">
+      <!-- First set -->
+      <div class="partner-item" role="listitem"><span class="partner-name">SIEMENS</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-sep">|</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-name">FANUC</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-sep">|</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-name">YASKAWA</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-sep">|</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-name">ABB</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-sep">|</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-name">KUKA</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-sep">|</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-name">BOSCH</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-sep">|</span></div>
+      <!-- Duplicate set for seamless loop -->
+      <div class="partner-item" role="listitem"><span class="partner-name">SIEMENS</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-sep">|</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-name">FANUC</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-sep">|</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-name">YASKAWA</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-sep">|</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-name">ABB</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-sep">|</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-name">KUKA</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-sep">|</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-name">BOSCH</span></div>
+      <div class="partner-item" role="listitem"><span class="partner-sep">|</span></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer" aria-label="Site footer">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo-text">Servo<span>Motion</span> Solution</div>
+        <p>Founded in 2003, ServoMotion Solution is a leader in precision servo motor and motion control solutions for industrial automation. We operate globally, delivering high-performance engineering services to manufacturing, automotive, aerospace and energy sectors.</p>
+        <div class="footer-socials">
+          <a class="social-btn" href="#" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a class="social-btn" href="#" aria-label="YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#1a1a1a"/></svg>
+          </a>
+          <a class="social-btn" href="#" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <div class="contact-item">
+          <span class="ci-icon" aria-hidden="true">📧</span>
+          <div class="ci-text">
+            <strong>Email</strong>
+            info@servomotion-solution.com
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="ci-icon" aria-hidden="true">📞</span>
+          <div class="ci-text">
+            <strong>Phone</strong>
+            +1 (800) 555-0199
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="ci-icon" aria-hidden="true">📍</span>
+          <div class="ci-text">
+            <strong>Address</strong>
+            Industrial Park, Zone 4, Building 12
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="footer-cta">
+        <h4>Watch Our Work</h4>
+        <p>See our latest automation projects and precision engineering solutions in action.</p>
+        <a class="btn-yt" href="#" aria-label="Watch our video on YouTube">
+          <span class="btn-yt-icon" aria-hidden="true">▶</span>
+          WATCH OUR VIDEO
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 ServoMotion Solution — All rights reserved.</span>
+      <nav class="footer-bottom-links" aria-label="Legal links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Terms of Use</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+    // ---- Navbar scroll ----
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // ---- Hamburger ----
+    const hamburger    = document.getElementById('hamburger');
+    const mobileMenu   = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', open);
+    });
+    function closeMobileMenu() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+
+    // ---- IntersectionObserver: generic fade-in ----
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-in, .feature-card, .service-card, .sd-card, .robot-feature-item').forEach(el => {
+      fadeObserver.observe(el);
+    });
+
+    // ---- Robot arm text reveal ----
+    const armTextObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          armTextObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.robot-arm-text').forEach(el => armTextObserver.observe(el));
+
+    // ---- Robot arm SVG scroll animation ----
+    const robotSection = document.getElementById('robot-arm');
+    const armSvgObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          robotSection.classList.add('arm-animated');
+          armSvgObserver.unobserve(robotSection);
+        }
+      });
+    }, { threshold: 0.3 });
+    armSvgObserver.observe(robotSection);
+
+    // ---- Animated counters ----
+    function animateCounter(el) {
+      const target = parseInt(el.dataset.target, 10);
+      const duration = 1800;
+      const start    = performance.now();
+      const suffix   = el.dataset.suffix || '+';
+
+      function update(now) {
+        const elapsed  = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        const ease     = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(ease * target) + (progress < 1 ? '' : (target === 98 ? '%' : '+'));
+        if (progress < 1) requestAnimationFrame(update);
+      }
+      requestAnimationFrame(update);
+    }
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.stat-number[data-target]').forEach(animateCounter);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+
+    const statsSection = document.getElementById('stats');
+    if (statsSection) counterObserver.observe(statsSection);
+  </script>
+</body>
+</html>
