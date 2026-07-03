@@ -1,85 +1,59 @@
 <!-- Hero Section -->
 <div align="center">
-  <img src="https://media4.giphy.com/media/QnVI2bPoZ0tag/giphy.gif" width="180px"/>
-  <h1 align="center">Hey 👋, I'm <span style="color:#4CAF50;">Juanda 🏎️</span></h1>
-  <h3 align="center">🚀 Software Engineer | Problem Solver | Lifelong Learner</h3>
-  
-<!-- Badges -->
+  <h1 align="center">Juan Daniel Gonzalez</h1>
+  <h3 align="center">Software Engineer | Sr Fullstack Developer | UI/UX</h3>
+  <br>
   <p align="center">
-     <a href="mailto:danielalejandre1050@gmail.com" target="_blank">
-      <img src="https://img.shields.io/badge/Email-FF5722?style=flat&logo=gmail&logoColor=white"/>
+    <a href="https://www.juanda.lat/" target="_blank">View Portfolio (juanda.lat)</a>
+  </p>
+  <br>
+  <!-- Minimalist Badges (For-the-badge style, monochrome) -->
+  <p align="center">
+    <a href="mailto:danielalejandre1050@gmail.com" target="_blank">
+      <img src="https://img.shields.io/badge/Email-000000?style=for-the-badge&logo=gmail&logoColor=white"/>
     </a>
     <a href="https://twitter.com/juanda_1050" target="_blank">
-      <img src="https://img.shields.io/badge/Twitter-1C9CEA?style=flat&logo=twitter&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=x&logoColor=white"/>
     </a>
     <a href="https://drive.google.com/file/d/1ZL2-FZStmovcsHmCMVqVI1uVzFYccxQZ/view?usp=sharing" target="_blank">
-      <img src="https://img.shields.io/badge/Resume-0078D4?style=flat&logo=googledrive&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Resume-000000?style=for-the-badge&logo=googledrive&logoColor=white"/>
     </a>
   </p>
 </div>
 
 ---
 
-## 🌱 About Me  
+##  Profile
 
-<div align="center">
-  <img src="https://i.imgur.com/tiBe8pI.png" width="200px" align="right"/>
-</div>
-
-👻 Hi there! I'm **Juanda** — passionate about technology, continuous learning, and problem solving.  
-
-- 🔭 Currently focused on **becoming 1% better every day**  
-- 🧑‍💻 Learning **Node.js + Microservices**
-- 💬 Always open to collaborate on exciting projects  
-- 📩 Reach me at: [danielalejandre1050@gmail.com](mailto:danielalejandre1050@gmail.com)  
-- 📄 Learn more about me: [Resume](https://drive.google.com/file/d/1ZL2-FZStmovcsHmCMVqVI1uVzFYccxQZ/view?usp=sharing)  
+- Execution of technology modernization initiatives across enterprise applications.
+- Architectural design of high-performance microservices and dynamic calculation engines using **Node.js** and **.NET**.
+- Development of zero-friction commercial platforms with optimized state management leveraging **React** and **TypeScript**.
+- Construction and maintenance of scalable corporate UI component libraries to standardize front-end environments.
 
 ---
 
-## 💻 Tech Stack  
+## ⌘ Technology Stack
 
-#### 👨‍💻 Languages  
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=cs,js,ts,python,java" />
-</p>
-
-#### 🎨 Frontend  
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,react,tailwind" />
-</p>
-
-#### ⚙️ Backend  
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,dotnet" />
-</p>
-
-#### 📱 Mobile  
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react" />
-</p>
-
-#### 🗄 Databases  
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb,supabase" />
-</p>
-
-#### 🔧 Tools & Cloud  
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=git,linux,postman,aws,azure,docker" />
+  <img src="https://skillicons.dev/icons?i=ts,js,cs,python,java" /><br><br>
+  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css" /><br><br>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,dotnet,mysql,postgresql" /><br><br>
+  <img src="https://skillicons.dev/icons?i=git,aws,docker,linux,figma" />
 </p>
 
 ---
 
-## 📊 GitHub Stats  
+## 📈 Activity Metrics
 
 <div align="center">
-  <img align="center" style="width:43.5%;" src="https://github-readme-stats.vercel.app/api?username=Juanda1050&theme=radical&show_icons=true&hide_border=false&count_private=true" />
-  <img align="center" style="width:46%;" src="https://github-readme-streak-stats.herokuapp.com/?user=Juanda1050&theme=radical&hide_border=false" />
+  <!-- Apple aesthetic: Monochrome / GitHub Dark custom colors to match sleek interfaces -->
+  <img align="center" style="width:46%;" src="https://github-readme-stats.vercel.app/api?username=Juanda1050&show_icons=true&hide_border=true&count_private=true&bg_color=0d1117&title_color=ffffff&text_color=8b949e&icon_color=ffffff" />
+  <img align="center" style="width:46%;" src="https://github-readme-streak-stats.herokuapp.com/?user=Juanda1050&hide_border=true&background=0d1117&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=8b949e&sideLabels=8b949e&dates=8b949e" />
 </div>
 
-<br/> 
+<br/>
 
-<!-- Activity Graph -->
+<!-- Activity Graph Minimalist Dark Theme -->
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Juanda1050&theme=radical" width="90%"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Juanda1050&bg_color=0d1117&color=ffffff&line=ffffff&point=ffffff&area=true&hide_border=true" width="90%"/>
 </div>
