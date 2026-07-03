@@ -5,7 +5,7 @@
   <br/>
 
   <a href="https://www.juanda.lat/" target="_blank">
-    <img src="https://readme-typing-svg.demolab.com?font=SF+Pro+Display&weight=600&size=42&duration=4000&pause=2000&color=F5F5F7&center=true&vCenter=true&width=800&height=60&lines=Juan+Daniel+Gonzalez;Senior+Fullstack+Engineer" alt="Juan Daniel Gonzalez" />
+    <img src="https://readme-typing-svg.demolab.com?font=SF+Pro+Display&weight=600&size=32&duration=4000&pause=2000&color=F5F5F7&center=true&vCenter=true&width=850&height=60&lines=Juan+Daniel+Gonzalez+Alejandre;Senior+Fullstack+Engineer" alt="Juan Daniel Gonzalez Alejandre" />
   </a>
 
   <br/>
@@ -22,21 +22,9 @@
     <a href="https://www.juanda.lat/" target="_blank">
       <img src="https://img.shields.io/badge/View_Portfolio-0071e3?style=for-the-badge&logoColor=white" />
     </a>
-    &nbsp;
-    <a href="https://drive.google.com/file/d/1ZL2-FZStmovcsHmCMVqVI1uVzFYccxQZ/view?usp=sharing" target="_blank">
-      <img src="https://img.shields.io/badge/Resume_PDF-1C1C1E?style=for-the-badge&logo=googledrive&logoColor=0071e3" />
-    </a>
   </p>
 
   <p align="center">
-    <a href="mailto:danielalejandre1050@gmail.com">
-      <img src="https://img.shields.io/badge/Email-1C1C1E?style=flat-square&logo=gmail&logoColor=86868B" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://twitter.com/juanda_1050">
-      <img src="https://img.shields.io/badge/Twitter-1C1C1E?style=flat-square&logo=x&logoColor=86868B" />
-    </a>
-    &nbsp;&nbsp;
     <a href="https://www.linkedin.com/in/tu-usuario">
       <img src="https://img.shields.io/badge/LinkedIn-1C1C1E?style=flat-square&logo=linkedin&logoColor=86868B" />
     </a>
@@ -46,22 +34,15 @@
 <br/>
 <br/>
 
-<table align="center" border="0" cellspacing="0" cellpadding="0" width="860">
+<table align="center" border="0" cellspacing="0" cellpadding="20" width="860">
   <tr>
-    <td width="420" valign="top">
-      <h3 align="left">About.</h3>
-      <p align="left">I'm a software engineer who builds at the intersection of engineering precision and design sensibility.<br/><br/>From high-performance backend systems to polished frontend interfaces — I focus on products that are fast, clear, and built to last.<br/><br/>I believe great software is invisible. <b>It just works.</b></p>
-    </td>
-    <td width="40"></td>
-    <td width="400" valign="top">
-      <h3 align="left">Focus.</h3>
-      <ul align="left">
-        <li>Fullstack products with strong product focus</li>
-        <li>High-performance APIs and microservices</li>
-        <li>React / Next.js interfaces with refined UX</li>
-        <li>UI systems and component libraries at scale</li>
-        <li>Enterprise platform modernization</li>
-      </ul>
+    <td align="center">
+      <h2>About & Focus.</h2>
+      <br/>
+      <p style="font-size: 16px; color: #8b949e; line-height: 1.6;">
+        I engineer digital products where precision meets aesthetics.<br/><br/>
+        My work is centered around building <b>high-performance Fullstack applications</b>, scaling <b>UI architectures</b>, and modernizing enterprise platforms. I believe great software should be intuitive, incredibly fast, and practically invisible to the user.
+      </p>
     </td>
   </tr>
 </table>
@@ -100,23 +81,25 @@
   <img src="https://readme-typing-svg.demolab.com?font=SF+Pro+Display&weight=600&size=16&duration=1&pause=999999&color=F5F5F7&center=true&vCenter=true&width=300&lines=Philosophy." />
   <br/><br/>
 
-  <table border="0" cellspacing="0" cellpadding="0" width="860">
+  <table border="0" cellspacing="0" cellpadding="25" width="860">
     <tr>
-      <td align="center" width="215">
-        <img src="https://img.shields.io/badge/Clarity-1C1C1E?style=for-the-badge&color=0071e3" /><br/>
-        <sub><sup>Every detail serves a purpose</sup></sub>
+      <td align="center" width="430">
+        <h3 style="color: #0071e3;">✦ Clarity</h3>
+        <p style="color: #8b949e;">Every detail in the code and UI serves a deliberate purpose.</p>
       </td>
-      <td align="center" width="215">
-        <img src="https://img.shields.io/badge/Performance-1C1C1E?style=for-the-badge&color=0071e3" /><br/>
-        <sub><sup>Speed is a non-negotiable feature</sup></sub>
+      <td align="center" width="430">
+        <h3 style="color: #0071e3;">⚡ Performance</h3>
+        <p style="color: #8b949e;">Speed and system reliability are non-negotiable features.</p>
       </td>
-      <td align="center" width="215">
-        <img src="https://img.shields.io/badge/Design-1C1C1E?style=for-the-badge&color=0071e3" /><br/>
-        <sub><sup>Good software is a good experience</sup></sub>
+    </tr>
+    <tr>
+      <td align="center" width="430">
+        <h3 style="color: #0071e3;">✨ Design</h3>
+        <p style="color: #8b949e;">Exceptional software demands an equally exceptional experience.</p>
       </td>
-      <td align="center" width="215">
-        <img src="https://img.shields.io/badge/Impact-1C1C1E?style=for-the-badge&color=0071e3" /><br/>
-        <sub><sup>Execution with measurable results</sup></sub>
+      <td align="center" width="430">
+        <h3 style="color: #0071e3;">🎯 Impact</h3>
+        <p style="color: #8b949e;">Executing scalable solutions that deliver measurable results.</p>
       </td>
     </tr>
   </table>
@@ -145,10 +128,6 @@
 
   <p>
     <a href="https://www.juanda.lat/">juanda.lat</a>
-    &nbsp;·&nbsp;
-    <a href="mailto:danielalejandre1050@gmail.com">Email</a>
-    &nbsp;·&nbsp;
-    <a href="https://twitter.com/juanda_1050">X</a>
   </p>
 
   <br/>
