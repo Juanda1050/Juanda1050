@@ -123,21 +123,3 @@ I believe great software is invisible. It just works.
   <br/><br/>
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Juanda1050&bg_color=0d1117&color=0071e3&line=0071e3&point=ffffff&area=true&area_color=0071e3&hide_border=true" width="90%"/>
 </div>
-
----
-
-**Connect**
-
-Building something ambitious? Let's talk.
-
-<p>
-  <a href="https://www.juanda.lat/">juanda.lat</a>
-  &nbsp;·&nbsp;
-  <a href="mailto:danielalejandre1050@gmail.com">Email</a>
-  &nbsp;·&nbsp;
-  <a href="https://twitter.com/juanda_1050">X</a>
-</p>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0071e3&height=2&section=footer" width="100%"/>
