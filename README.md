@@ -56,37 +56,45 @@ I believe great software is invisible. It just works.
 
 ---
 
-## Core Stack
+<h2 align="center">Core Stack</h2>
 
-<div align="center">
+<p align="center">
+<img src="https://img.shields.io/badge/Languages-111111?style=for-the-badge&logo=apple&logoColor=white"/>
+</p>
 
-<table>
-<tr>
-<td align="center" width="900">
-
-### Building with technologies I enjoy
+<p align="center">
+<img src="https://skillicons.dev/icons?i=ts,js,cs,python,java&theme=light" />
+</p>
 
 <br>
 
-<img src="https://skillicons.dev/icons?i=ts,js,cs,python,java&theme=light" />
+<p align="center">
+<img src="https://img.shields.io/badge/Frontend-111111?style=for-the-badge&logo=apple&logoColor=white"/>
+</p>
 
-<br><br>
-
+<p align="center">
 <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css&theme=light" />
+</p>
 
-<br><br>
+<br>
 
+<p align="center">
+<img src="https://img.shields.io/badge/Backend-111111?style=for-the-badge&logo=apple&logoColor=white"/>
+</p>
+
+<p align="center">
 <img src="https://skillicons.dev/icons?i=nodejs,express,dotnet,mysql,postgresql&theme=light" />
+</p>
 
-<br><br>
+<br>
 
+<p align="center">
+<img src="https://img.shields.io/badge/Tools-111111?style=for-the-badge&logo=apple&logoColor=white"/>
+</p>
+
+<p align="center">
 <img src="https://skillicons.dev/icons?i=git,aws,docker,linux,figma&theme=light" />
-
-</td>
-</tr>
-</table>
-
-</div>
+</p>
 
 ---
 
