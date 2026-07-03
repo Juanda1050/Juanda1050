@@ -59,7 +59,11 @@ I believe great software is invisible. It just works.
 <h2 align="center">Core Stack</h2>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Languages-111111?style=for-the-badge&logo=apple&logoColor=white"/>
+  <i>The tools behind the craft.</i>
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/LANGUAGES-000000?style=for-the-badge&logoColor=white"/>
 </p>
 
 <p align="center">
@@ -69,7 +73,7 @@ I believe great software is invisible. It just works.
 <br>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Frontend-111111?style=for-the-badge&logo=apple&logoColor=white"/>
+<img src="https://img.shields.io/badge/FRONTEND-000000?style=for-the-badge&logoColor=white"/>
 </p>
 
 <p align="center">
@@ -79,7 +83,7 @@ I believe great software is invisible. It just works.
 <br>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Backend-111111?style=for-the-badge&logo=apple&logoColor=white"/>
+<img src="https://img.shields.io/badge/BACKEND-000000?style=for-the-badge&logoColor=white"/>
 </p>
 
 <p align="center">
@@ -89,7 +93,7 @@ I believe great software is invisible. It just works.
 <br>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Tools-111111?style=for-the-badge&logo=apple&logoColor=white"/>
+<img src="https://img.shields.io/badge/INFRASTRUCTURE-000000?style=for-the-badge&logoColor=white"/>
 </p>
 
 <p align="center">
