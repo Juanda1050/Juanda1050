@@ -19,18 +19,6 @@
     <a href="https://www.juanda.lat/" target="_blank">
       <img src="https://img.shields.io/badge/View_Portfolio-0071e3?style=for-the-badge&logoColor=white" />
     </a>
-    &nbsp;
-    <a href="https://drive.google.com/file/d/1ZL2-FZStmovcsHmCMVqVI1uVzFYccxQZ/view?usp=sharing" target="_blank">
-      <img src="https://img.shields.io/badge/Resume-0071e3?style=for-the-badge&logo=googledrive&logoColor=white" />
-    </a>
-    &nbsp;
-    <a href="mailto:danielalejandre1050@gmail.com">
-      <img src="https://img.shields.io/badge/Email-0071e3?style=for-the-badge&logo=gmail&logoColor=white" />
-    </a>
-    &nbsp;
-    <a href="https://twitter.com/juanda_1050">
-      <img src="https://img.shields.io/badge/X-0071e3?style=for-the-badge&logo=x&logoColor=white" />
-    </a>
   </p>
 
   <br/>
@@ -84,26 +72,15 @@ I believe great software is invisible. It just works.
 **Engineering Principles**
 
 <div align="center">
-  <table border="0" cellspacing="0" cellpadding="8" width="860">
-    <tr>
-      <td align="center" width="215">
-        <img src="https://img.shields.io/badge/Clarity_over_noise-0d1117?style=for-the-badge&color=0071e3" /><br/>
-        <sub>Every detail serves a purpose</sub>
-      </td>
-      <td align="center" width="215">
-        <img src="https://img.shields.io/badge/Performance_is_a_feature-0d1117?style=for-the-badge&color=0071e3" /><br/>
-        <sub>Speed and reliability are non-negotiable</sub>
-      </td>
-      <td align="center" width="215">
-        <img src="https://img.shields.io/badge/Design_matters-0d1117?style=for-the-badge&color=0071e3" /><br/>
-        <sub>Good software is also a good experience</sub>
-      </td>
-      <td align="center" width="215">
-        <img src="https://img.shields.io/badge/Ship_with_intent-0d1117?style=for-the-badge&color=0071e3" /><br/>
-        <sub>Execution with measurable impact</sub>
-      </td>
-    </tr>
-  </table>
+  <img src="https://img.shields.io/static/v1?label=&message=Clarity+over+noise&color=0071e3&style=for-the-badge&labelColor=0d1117" width="220" />&nbsp;
+  <img src="https://img.shields.io/static/v1?label=&message=Performance+is+a+feature&color=0071e3&style=for-the-badge&labelColor=0d1117" width="220" />&nbsp;
+  <img src="https://img.shields.io/static/v1?label=&message=Design+matters&color=0071e3&style=for-the-badge&labelColor=0d1117" width="220" />&nbsp;
+  <img src="https://img.shields.io/static/v1?label=&message=Ship+with+intent&color=0071e3&style=for-the-badge&labelColor=0d1117" width="220" />
+  <br/><br/>
+  <sub>Every detail serves a purpose</sub> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <sub>Speed and reliability are non-negotiable</sub> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <sub>Good software is also a good experience</sub> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <sub>Execution with measurable impact</sub>
 </div>
 
 ---
