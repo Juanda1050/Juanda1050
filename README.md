@@ -44,28 +44,49 @@ I believe great software is invisible. It just works.
 
 **What I Build**
 
-- Fullstack products with strong product focus
-- High-performance APIs and microservices
-- React / Next.js interfaces with refined UX
-- UI systems and component libraries at scale
-- Enterprise platform modernization
+> Fullstack products with strong product focus
+
+> High-performance APIs and microservices
+
+> React / Next.js interfaces with refined UX
+
+> UI systems and component libraries at scale
+
+> Enterprise platform modernization
 
 ---
 
-**Core Stack**
+## Core Stack
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,cs,python,java&theme=dark" />
-</p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css&theme=dark" />
-</p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,express,dotnet,mysql,postgresql&theme=dark" />
-</p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=git,aws,docker,linux,figma&theme=dark" />
-</p>
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="900">
+
+### Building with technologies I enjoy
+
+<br>
+
+<img src="https://skillicons.dev/icons?i=ts,js,cs,python,java&theme=light" />
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css&theme=light" />
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=nodejs,express,dotnet,mysql,postgresql&theme=light" />
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=git,aws,docker,linux,figma&theme=light" />
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
