@@ -6,12 +6,14 @@
   <br/>
 
   <h1>
-    <img src="https://readme-typing-svg.demolab.com?font=SF+Pro+Display&weight=300&size=42&duration=3000&pause=2000&color=FFFFFF&center=true&vCenter=true&width=700&height=70&lines=Juan+Daniel+Gonzalez" alt="Juan Daniel Gonzalez" />
+    <img src="https://readme-typing-svg.demolab.com?font=SF+Pro+Display&weight=300&size=38&duration=3000&pause=2000&color=FFFFFF&center=true&vCenter=true&width=800&height=70&lines=Juan+Daniel+Gonzalez+Alejandre" alt="Juan Daniel Gonzalez Alejandre" />
   </h1>
 
   <p align="center">
-    SENIOR FULLSTACK ENGINEER &nbsp;·&nbsp; FRONTEND ARCHITECTURE &nbsp;·&nbsp; DESIGN SYSTEMS
+    Software Engineer &nbsp;·&nbsp; Senior Fullstack Developer &nbsp;·&nbsp; UX/UI Designer
   </p>
+
+  <br/>
 
   <p align="center">
     <a href="https://www.juanda.lat/" target="_blank">
@@ -19,17 +21,15 @@
     </a>
     &nbsp;
     <a href="https://drive.google.com/file/d/1ZL2-FZStmovcsHmCMVqVI1uVzFYccxQZ/view?usp=sharing" target="_blank">
-      <img src="https://img.shields.io/badge/Resume_PDF-1d1d1f?style=for-the-badge&logo=googledrive&logoColor=0071e3" />
+      <img src="https://img.shields.io/badge/Resume-0071e3?style=for-the-badge&logo=googledrive&logoColor=white" />
     </a>
-  </p>
-
-  <p align="center">
+    &nbsp;
     <a href="mailto:danielalejandre1050@gmail.com">
-      <img src="https://img.shields.io/badge/Email-0071e3?style=flat-square&logo=gmail&logoColor=white" />
+      <img src="https://img.shields.io/badge/Email-0071e3?style=for-the-badge&logo=gmail&logoColor=white" />
     </a>
-    &nbsp;&nbsp;
+    &nbsp;
     <a href="https://twitter.com/juanda_1050">
-      <img src="https://img.shields.io/badge/X-0071e3?style=flat-square&logo=x&logoColor=white" />
+      <img src="https://img.shields.io/badge/X-0071e3?style=for-the-badge&logo=x&logoColor=white" />
     </a>
   </p>
 
@@ -67,9 +67,15 @@ I believe great software is invisible. It just works.
 **Core Stack**
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,cs,python,java&theme=dark" /><br/><br/>
-  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css&theme=dark" /><br/><br/>
-  <img src="https://skillicons.dev/icons?i=nodejs,express,dotnet,mysql,postgresql&theme=dark" /><br/><br/>
+  <img src="https://skillicons.dev/icons?i=ts,js,cs,python,java&theme=dark" />
+</p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css&theme=dark" />
+</p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nodejs,express,dotnet,mysql,postgresql&theme=dark" />
+</p>
+<p align="center">
   <img src="https://skillicons.dev/icons?i=git,aws,docker,linux,figma&theme=dark" />
 </p>
 
