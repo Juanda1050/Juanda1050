@@ -69,26 +69,15 @@ I believe great software is invisible. It just works.
 
 ---
 
-**Engineering Principles**
+## Engineering Principles
 
-<div align="center">
-  <br/>
-  <img src="https://img.shields.io/badge/%20-CLARITY_OVER_NOISE-0071e3?style=for-the-badge" width="200"/> &nbsp;
-  <img src="https://img.shields.io/badge/%20-PERFORMANCE_IS_A_FEATURE-0071e3?style=for-the-badge" width="200"/> &nbsp;
-  <img src="https://img.shields.io/badge/%20-DESIGN_MATTERS-0071e3?style=for-the-badge" width="200"/> &nbsp;
-  <img src="https://img.shields.io/badge/%20-SHIP_WITH_INTENT-0071e3?style=for-the-badge" width="200"/>
-</div>
+> Clarity over noise.
 
-<div align="center">
-  <table border="0" cellspacing="0" cellpadding="0" width="850">
-    <tr>
-      <td align="center" width="210"><sub>Every detail serves a purpose</sub></td>
-      <td align="center" width="210"><sub>Speed and reliability are non-negotiable</sub></td>
-      <td align="center" width="210"><sub>Good software is also a good experience</sub></td>
-      <td align="center" width="210"><sub>Execution with measurable impact</sub></td>
-    </tr>
-  </table>
-</div>
+> Performance is a feature.
+
+> Design matters.
+
+> Ship with intent.
 
 <br/>
 
