@@ -72,16 +72,25 @@ I believe great software is invisible. It just works.
 **Engineering Principles**
 
 <div align="center">
-  <img src="https://img.shields.io/static/v1?label=&message=Clarity+over+noise&color=0071e3&style=for-the-badge&labelColor=0d1117" width="220" />&nbsp;
-  <img src="https://img.shields.io/static/v1?label=&message=Performance+is+a+feature&color=0071e3&style=for-the-badge&labelColor=0d1117" width="220" />&nbsp;
-  <img src="https://img.shields.io/static/v1?label=&message=Design+matters&color=0071e3&style=for-the-badge&labelColor=0d1117" width="220" />&nbsp;
-  <img src="https://img.shields.io/static/v1?label=&message=Ship+with+intent&color=0071e3&style=for-the-badge&labelColor=0d1117" width="220" />
-  <br/><br/>
-  <sub>Every detail serves a purpose</sub> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <sub>Speed and reliability are non-negotiable</sub> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <sub>Good software is also a good experience</sub> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <sub>Execution with measurable impact</sub>
+  <br/>
+  <img src="https://img.shields.io/badge/%20-CLARITY_OVER_NOISE-0071e3?style=for-the-badge" width="200"/> &nbsp;
+  <img src="https://img.shields.io/badge/%20-PERFORMANCE_IS_A_FEATURE-0071e3?style=for-the-badge" width="200"/> &nbsp;
+  <img src="https://img.shields.io/badge/%20-DESIGN_MATTERS-0071e3?style=for-the-badge" width="200"/> &nbsp;
+  <img src="https://img.shields.io/badge/%20-SHIP_WITH_INTENT-0071e3?style=for-the-badge" width="200"/>
 </div>
+
+<div align="center">
+  <table border="0" cellspacing="0" cellpadding="0" width="850">
+    <tr>
+      <td align="center" width="210"><sub>Every detail serves a purpose</sub></td>
+      <td align="center" width="210"><sub>Speed and reliability are non-negotiable</sub></td>
+      <td align="center" width="210"><sub>Good software is also a good experience</sub></td>
+      <td align="center" width="210"><sub>Execution with measurable impact</sub></td>
+    </tr>
+  </table>
+</div>
+
+<br/>
 
 ---
 
