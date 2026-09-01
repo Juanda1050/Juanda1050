@@ -121,6 +121,5 @@ I believe great software is invisible. It just works.
 <div align="center">
   <a href="https://streak-stats.demolab.com?user=Juanda1050&theme=tokyonight&hide_border=true&cache_bust=1">
     <img src="https://streak-stats.demolab.com?user=Juanda1050&theme=tokyonight&hide_border=true&cache_bust=1" alt="GitHub Streak" />
-  </a>  <br/><br/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Juanda1050&bg_color=0d1117&color=0071e3&line=0071e3&point=ffffff&area=true&area_color=0071e3&hide_border=true" width="90%"/>
+  </a>
 </div>
